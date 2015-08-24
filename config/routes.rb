@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'marketing#home'
   get 'about' => 'marketing#about'
   get 'pricing' => 'marketing/pricing'
